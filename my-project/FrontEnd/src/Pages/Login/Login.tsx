@@ -21,7 +21,7 @@ const Login = () => {
       const data = await res.json();
       if (res.ok && data.token) {
         localStorage.setItem("token", data.token);
-        navigate("/"); // Go to todos page
+        navigate("/home"); // Go to home page
       } else {
         setError(data.error || "Login failed");
       }
@@ -109,7 +109,7 @@ const Login = () => {
           <p>
             Don’t have an account?{" "}
             <a
-              href="#"
+              href="/signup"
               className="text-yellow-300 hover:underline font-medium"
             >
               Sign up
