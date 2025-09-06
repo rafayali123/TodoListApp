@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-8 items-center">
           <li>
             <Link
-              to="/"
+              to="/home"
               className="hover:text-yellow-400 transition-all duration-300"
             >
               Home
@@ -58,7 +58,7 @@ const Navbar = () => {
         <ul className="md:hidden flex flex-col gap-4 bg-[#1e3a8a]/90 p-4 mt-2 rounded-xl backdrop-blur-md shadow-md">
           <li>
             <Link
-              to="/"
+              to="/home"
               onClick={() => setIsOpen(false)}
               className="hover:text-yellow-400 transition-all duration-200"
             >
